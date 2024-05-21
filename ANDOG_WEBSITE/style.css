@@ -1,0 +1,187 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for larger screens */
+header,
+nav,
+section,
+footer {
+    padding: 0;
+    margin-bottom: auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e41a24;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section {
+    background-color: gray;
+}
+
+section img {
+    float: left;
+    margin-right: 20px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul li a:hover {
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 480px) {
+    header,
+    nav,
+    section,
+    footer {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .profile-photo {
+        max-width: 200px;
+        margin: 10px auto;
+    }
+
+    h1,
+    h2 {
+        margin: 10px;
+    }
+
+    p {
+        margin: 5px;
+    }
+
+    video {
+        max-width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    nav ul {
+        top: 20px; /* Adjust as needed */
+    }
+
+    .profile-photo {
+        max-width: 250px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    h1,
+    h2 {
+        margin: 20px;
+    }
+
+    video {
+        margin: 20px;
+    }
+}
+
+/* Common styles */
+.about,
+.educational,
+.family,
+.contact {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    max-width: 250px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 40px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+nav ul {
+    margin: 20px;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    max-width: 250px;
+    margin: 0 auto 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.a-logo {
+    height: 80px;
+    width: 80px;
+    margin-right: 0px;
+}
+
+.feedback {
+    text-align: left;
+    margin: 40px; 
+}
+
+.feedback button {
+    padding: 10px;
+    width: 70px;
+}
+.ELEMENTARY{
+    padding: 20px;
+
+}
